@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Fish Store</title>
+    </head>
+    <body>
+        <h1>{{Store.location}}</h1>
+        <h2>Here are our stores:</h2>
+        <p>
+            <ul>
+                {% for Store in stores.fish_set.all %}
+                    <li>
+                    {{ Fish.name }} - ${{Fish.price}} <br>
+                    Quantity: {{Fish,quantity}} <br>
+                    </li>
+                {% endfor %}
+            </ul>
+        </p>
+    </body>
+</html>

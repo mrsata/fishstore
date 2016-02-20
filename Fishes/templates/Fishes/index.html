@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Fish Store</title>
+    </head>
+    <body>
+        <h1>My Fish Store</h1>
+        <h2>Here are our stores:</h2>
+        <p>
+            <ul>
+                {% for Store in stores %}
+                    <li>
+                    <a href="/stores/{{ Store.id }}">{{ Store.Location }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </p>
+    </body>
+</html>
