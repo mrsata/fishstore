@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from Fishes.models import Fish, Store
 # Create your views here.
 
 from rest_framework.viewsets import ModelViewSet
-from Fishes.serializer
+from Fishes.serializers import FishSerializer, StoreSerializer
 
 def index(request):
     fishes = Fish.objects.all()

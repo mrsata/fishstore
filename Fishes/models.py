@@ -9,7 +9,7 @@ class Store(models.Model):
 	timeClose = models.TimeField()
 
 	def __str__(self):
-		returm self.location
+		return self.location
 
 class Fish(models.Model):
 	name = models.CharField(max_length = 255)
@@ -19,6 +19,3 @@ class Fish(models.Model):
 
 	def __str__(self):
 		return self.name
-
-	def is_low_stock(self):
-        return self.quantity < 10
